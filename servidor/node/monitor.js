@@ -7,7 +7,7 @@ const paths = [
     'catra_event',
     'operation_mode',
     'door',
-    'secbox',
+    'secbox'
 ];
 
 module.exports = (url, request, response) => {
@@ -32,7 +32,7 @@ module.exports = (url, request, response) => {
             console.log('Body content:\n' + JSON.stringify(JSON.parse(textBody), null, 2));
 
             //code
-        }
+        };
 
         readBody(request, callback);
 
@@ -46,7 +46,7 @@ module.exports = (url, request, response) => {
 
             //code
 
-        }
+        };
 
         readBody(request, callback);
 
@@ -60,7 +60,7 @@ module.exports = (url, request, response) => {
 
             //code
 
-        }
+        };
 
         readBody(request, callback);
 
@@ -74,7 +74,7 @@ module.exports = (url, request, response) => {
 
             //code
 
-        }
+        };
 
         readBody(request, callback);
 
@@ -88,7 +88,7 @@ module.exports = (url, request, response) => {
 
             //code
 
-        }
+        };
 
         readBody(request, callback);
 
@@ -102,7 +102,7 @@ module.exports = (url, request, response) => {
 
             //code
 
-        }
+        };
 
         readBody(request, callback);
 
@@ -116,11 +116,11 @@ module.exports = (url, request, response) => {
 
             //code
 
-        }
+        };
 
         readBody(request, callback);
 
         return;
     }
 
-}
+};

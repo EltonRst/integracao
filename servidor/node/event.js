@@ -32,12 +32,12 @@ module.exports = (url, request, response) => {
     let callback = (chunks) => {
         var textBody = Buffer.concat(chunks).toString();
         console.log('Response body content:\n' + JSON.stringify(JSON.parse(textBody), null, 2));
-    }
+    };
 
     if (['new_biometric_template.fcgi', 'new_biometric_image.fcgi'].includes(lastPathname)) {
         callback = (chunks) => {
             console.log('Response body length -> ' + chunks.length);
-        }
+        };
 
 
     }
@@ -49,4 +49,4 @@ module.exports = (url, request, response) => {
         response.end();
     }
 
-}
+};
