@@ -14,7 +14,7 @@ http.createServer((request, response) => {
 
     console.log('Method -> ' + request.method);
     console.log("Path -> " + urlParsed.pathname);
-    console.log('Query params -> ' + urlParsed.query);
+    console.log('Query params -> ' + JSON.stringify(urlParsed.query));
 
     push(urlParsed, request, response);
     monitor(urlParsed, request, response);

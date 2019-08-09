@@ -42,8 +42,7 @@ module.exports = (url, request, response) => {
     if (lastPathname === 'result') {
         const callback = (chunks) => {
             var textBody = Buffer.concat(chunks).toString();
-            //console.log('Response body content:\n' + JSON.stringify(JSON.parse(textBody), null, 2));
-            console.log(JSON.parse(textBody));
+            console.log('Response body content:\n' + JSON.stringify(JSON.parse(textBody), null, 2));
             //code
 
         };
